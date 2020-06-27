@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改用户</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+    <div style="width:800px;height:100%;margin-left:270px;">
+        <form action="/update" method="post">
+            考    号：<input class="form-control" type="text" th:value="${student.studentId}" name="studentId" readonly="readonly"><br>
+            地    区：<input class="form-control" type="text" th:value="${student.area}" name="area"><br>
+            姓    名：<input class="form-control" type="text" th:value="${student.name}" name="name" readonly="readonly"><br>
+            年    龄：<input class="form-control" type="text" th:value="${student.age}" name="age"><br>
+            性    别：<input class="form-control" type="text" th:value="${student.gender}" name="gender" readonly="readonly"><br>
+            中学名称：<input class="form-control" type="text" th:value="${student.highSchoolName}" name="highSchoolName"><br>
+            语    文：<input class="form-control" type="text" th:value="${student.chineseScore}" name="chineseScore"><br>
+            数    学：<input class="form-control" type="text" th:value="${student.mathScore}" name="mathScore"><br>
+            英    语：<input class="form-control" type="text" th:value="${student.englishScore}" name="englishScore"><br>
+            历    史：<input class="form-control" type="text" th:value="${student.historyScore}" name="historyScore"><br>
+            地    理：<input class="form-control" type="text" th:value="${student.geographyScore}" name="geographyScore"><br>
+            物    理：<input class="form-control" type="text" th:value="${student.physicsScore}" name="physicsScore"><br>
+            艺    术：<input class="form-control" type="text" th:value="${student.artScore}" name="artScore"><br>
+            <button class="btn btn-primary btn-lg btn-block" type="submit">提交</button>
+        </form>
+    </div>
+
+</body>
+</html>

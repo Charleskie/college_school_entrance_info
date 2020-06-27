@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加学生</title>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div style="width:800px;height:100%;margin-left:270px;">
+        <form action="/insert" method="post">
+            考    号：<input class="form-control" type="text" th:value="${username}" name="username"><br>
+            姓    名：<input class="form-control" type="text" th:value="${password}" name="password"><br>
+            <!--年    龄：<input class="form-control" type="text" th:value="${username}" name="username"><br>-->
+            <!--性    别：<input class="form-control" type="text" th:value="${password}" name="password"><br>-->
+            <!--中学名称：<input class="form-control" type="text" th:value="${username}" name="username"><br>-->
+            <!--语    文：<input class="form-control" type="text" th:value="${password}" name="password"><br>-->
+            <!--数    学：<input class="form-control" type="text" th:value="${username}" name="username"><br>-->
+            <!--英    语：<input class="form-control" type="text" th:value="${password}" name="password"><br>-->
+            <!--历    史：<input class="form-control" type="text" th:value="${username}" name="username"><br>-->
+            <!--地    理：<input class="form-control" type="text" th:value="${password}" name="password"><br>-->
+            <!--总    分：<input class="form-control" type="text" th:value="${username}" name="username"><br>-->
+            <button class="btn btn-primary btn-lg btn-block">保存</button>
+        </form>
+    </div>
+
+</body>
+</html>
