@@ -1,0 +1,2 @@
+# college_school_entrance_info
+学生高考信息录入系统
