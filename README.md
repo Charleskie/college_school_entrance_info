@@ -1,2 +1,3 @@
 # college_school_entrance_info
-基于SpringBoot开发的学生高考信息录入系统
+基于SpringBoot-themeleaf模板开发的学生高考信息录入系统
+
